@@ -5,7 +5,7 @@ __pycache__/
 
 #Flask instacnce folder (containes runtime data like SQLite DBs)
 instance/
-.db
+site.db
 
 #Enviroment files
 .env
@@ -20,3 +20,17 @@ cookenv
 
 #excel ignore
 ~$*
+
+# Ignore alembic migration history
+alembic/versions/*
+
+# Ignore alembic cache files
+alembic/__pycache__/
+
+# Ignore SQLite database file (if using SQLite)
+*.sqlite3
+*.db
+
+# Ignore virtual environment (if applicable)
+env/
+venv/
